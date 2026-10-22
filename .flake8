@@ -1,0 +1,4 @@
+[flake8]
+max-line-length = 100
+select = E501,D103
+exclude = .git,__pycache__,.venv,build
