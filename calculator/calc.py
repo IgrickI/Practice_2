@@ -5,7 +5,7 @@ def add(a: float, b: float) -> float:
 
 def sub(a: float, b: float) -> float:
     """Возвращает разность двух чисел"""
-    return a - b - b
+    return a - b
 
 
 def mul(a: float, b: float) -> float:
