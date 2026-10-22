@@ -32,7 +32,7 @@ OPERATIONS = {
     "-": sub,
     "*": mul,
     "/": div,
-    "%": div,
+    "%": mod,
 }
 
 
