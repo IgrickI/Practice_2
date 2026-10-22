@@ -5,7 +5,7 @@ def add(a: float, b: float) -> float:
 
 def sub(a: float, b: float) -> float:
     """Возвращает разность двух чисел"""
-    return a - b - b
+    return a - b
 
 
 def mul(a: float, b: float) -> float:
@@ -20,11 +20,19 @@ def div(a: float, b: float) -> float:
     return a / b
 
 
+def mod(a: float, b: float) -> float:
+    """Возвращает остаток от деления числе"""
+    if b == 0:
+        raise ZeroDivisionError("Деление на ноль")
+    return a % b
+
+
 OPERATIONS = {
     "+": add,
     "-": sub,
     "*": mul,
     "/": div,
+    "%": div,
 }
 
 
