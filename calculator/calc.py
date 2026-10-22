@@ -1,4 +1,5 @@
 def add(a: float, b: float) -> float:
+    """Возвращает сумму двух чисел"""
     return a + b
 
 
@@ -8,11 +9,12 @@ def sub(a: float, b: float) -> float:
 
 
 def mul(a: float, b: float) -> float:
+    """Возвращает произведение двух чисел"""
     return a * b
 
 
 def div(a: float, b: float) -> float:
-    """Возвращает частное. Бросает ZeroDivisionError при b == 0 -------------------------------------------------------------------------------------------------------------------------------------------------------------"""
+    """Возвращает частное. Бросает ZeroDivisionError при b == 0"""
     if b == 0:
         raise ZeroDivisionError("Деление на ноль")
     return a / b
