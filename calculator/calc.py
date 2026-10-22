@@ -20,11 +20,19 @@ def div(a: float, b: float) -> float:
     return a / b
 
 
+def mod(a: float, b: float) -> float:
+    """Возвращает остаток от деления числе"""
+    if b == 0:
+        raise ZeroDivisionError("Деление на ноль")
+    return a % b
+
+
 OPERATIONS = {
     "+": add,
     "-": sub,
     "*": mul,
     "/": div,
+    "%": mod,
 }
 
 

@@ -1,6 +1,6 @@
 import pytest
 
-from calculator.calc import add, sub, mul, div, calculate, parse_expression
+from calculator.calc import add, sub, mul, div, mod, calculate, parse_expression
 
 
 def test_add():
@@ -21,6 +21,10 @@ def test_mul():
 def test_div():
     """Проверка деления"""
     assert div(10, 2) == 5
+
+def test_mod():
+    """Проверка остатка от деления"""
+    assert mod(10, 2) == 0
 
 
 def test_div_by_zero():
